@@ -61,6 +61,7 @@ chain compromise first.
 - **Red team:** Promptfoo, garak, DeepTeam, AgentDojo and mcp-context-protector for tool poisoning,
   prompt injection and agent supply-chain risk.
 - **Runtime:** Lasso Gateway and Docker MCP Gateway for secret masking and egress control.
+- **State and queues:** authenticated Redis on loopback port 6380 with strict systemd sandboxing.
 - **Secret leakage:** four detection boundaries, pre-tool argument scanning, post-tool result redaction,
   egress DLP and read-then-write sequence alerts. Credentials should never enter the context window;
   detection is the safety net.
